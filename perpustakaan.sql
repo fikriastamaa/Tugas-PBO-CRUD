@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 01, 2024 at 06:59 AM
+-- Generation Time: May 03, 2024 at 06:27 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -42,11 +42,8 @@ CREATE TABLE `databuku` (
 --
 
 INSERT INTO `databuku` (`id`, `judul`, `genre`, `penulis`, `penerbit`, `lokasi`, `stok`) VALUES
-(16, '', '', '', '', '', ''),
-(17, '', '', '', '', '', ''),
-(18, '', '', '', '', '', ''),
-(19, '', '', '', '', '', ''),
-(20, '', '', '', '', '', '');
+(44, 'dilan', 'adventure', 'aku', 'fx musik', 'BDG5', '1'),
+(45, 'Aku kamu dan samudera', 'romance', 'rebelions', 'rose', 'ER45', '6');
 
 --
 -- Indexes for dumped tables
@@ -66,7 +63,7 @@ ALTER TABLE `databuku`
 -- AUTO_INCREMENT for table `databuku`
 --
 ALTER TABLE `databuku`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

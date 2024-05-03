@@ -26,9 +26,7 @@ public class databukuDAO implements databukuimplement {
     public databukuDAO(){
         connection = connector.connection();
     }
-    
-    
-    
+
     @Override
     public void insert(databuku p) {
         PreparedStatement statement = null;
@@ -101,11 +99,12 @@ public class databukuDAO implements databukuimplement {
 
     @Override
     public List<databuku> getAll() {
-        List<databuku> db = new ArrayList<>();
+        List<databuku> db = null;
         try {
+            db = new ArrayList<databuku>();
             Statement st = connection.createStatement();
             ResultSet rs = st.executeQuery(select);
-            while (rs.next()) {
+            while(rs.next()) {
                 databuku bk = new databuku();
                 bk.setId(rs.getInt("id"));
                 bk.setJudul(rs.getString("judul"));

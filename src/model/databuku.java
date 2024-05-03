@@ -17,6 +17,30 @@ public class databuku {
     private String lokasi;
     private String stok;
 
+    public String getLokasi() {
+        return lokasi;
+    }
+
+    public void setLokasi(String lokasi) {
+        this.lokasi = lokasi;
+    }
+
+    public String getStok() {
+        return stok;
+    }
+
+    public void setStok(String stok) {
+        this.stok = stok;
+    }
+
+    public String getPenerbit() {
+        return penerbit;
+    }
+
+    public void setPenerbit(String penerbit) {
+        this.penerbit = penerbit;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -47,29 +71,5 @@ public class databuku {
 
     public void setPenulis(String penulis) {
         this.penulis = penulis;
-    }
-
-    public String getPenerbit() {
-        return penerbit;
-    }
-
-    public void setPenerbit(String penerbit) {
-        this.penerbit = penerbit;
-    }
-
-    public String getLokasi() {
-        return lokasi;
-    }
-
-    public void setLokasi(String lokasi) {
-        this.lokasi = lokasi;
-    }
-
-    public String getStok() {
-        return stok;
-    }
-
-    public void setStok(String stok) {
-        this.stok = stok;
     }
 }
